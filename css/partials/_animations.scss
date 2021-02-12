@@ -21,3 +21,30 @@
         fill: $white-dark;
     }
 }
+
+.line1{
+    animation: line 7s ease infinite alternate;
+}
+
+.line2{
+    animation: line 4s ease .7s infinite alternate;
+}
+
+.line3{
+    animation: line 6s ease 2s infinite alternate;
+}
+
+.line4{
+    animation: line 5s ease infinite alternate;
+}
+
+@keyframes line{
+    0%{
+        stroke-dasharray: 200 50;
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dasharray: 500 5;
+        stroke-dashoffset: 1000;
+    }
+}

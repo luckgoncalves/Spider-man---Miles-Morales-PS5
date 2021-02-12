@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider -man: Miles Morales | PS5</title>
+    
     <link rel="stylesheet" href="css/styles.css">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
 
@@ -13,7 +14,6 @@
     <!--========== FAVICON ==========-->
     <link rel="shortcut icon" href="svg/logo-spiderman.svg" />
 
-    <title>Spider -man: Miles Morales | PS5</title>
 </head>
 <body>
 
@@ -39,7 +39,7 @@
                         <li><a href="#" class="nav-link">Home</a></li>
                         <li><a href="#" class="nav-link">Story</a></li>
                         <li><a href="#" class="nav-link">Wallpapers</a></li>
-                        <li><a href="#" class="nav-link">#BeYourself</a></li>
+                        <li><a href="#" class="nav-link" style="color: #EA1D22; font-style: italic;">#BeYourself</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <img src="svg/icon-twitter.svg" onload="SVGInject(this)">
             </div>
 
-            <div class="bx mr-2"></div>
+            <div class="bx mr-3"></div>
         </nav>
     </header>
    
@@ -61,12 +61,18 @@
         </video>
     </section>
 
+    <!--======== BG-LINES ===========-->
+    <section class="bg-lines">
+        <img src="svg/svg-lines.svg" onload="SVGInject(this)" />
+    </section>
+
     <!--========== CONTAINER ==========-->
     <section class="container">
-        <div class="container-item-1 item-1">
-            <div class="px-1">
+        <div class="container-item-1 ">
+            <div class="px-1 item-1">
                 <img src="img/spiderman-text.png" onload="SVGInject(this)">
             </div>
+
             <p class="my-2 item-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing
                  elit. Eos tempora, perferendis reprehenderit repudiandae
@@ -74,18 +80,18 @@
                   pariatur fugit, dolor consequuntur. Rerum optio sequi quos dolores animi.
             </p>
 
-            <div class="item-3">
-                <a href="http://" class="btn">Pre-order now</a>
-                <a href="http://" class="ml-2 btn-secundary">watch the tease</a>
+            <div class="mt-1 flex item-3">
+                <span><a href="" class="btn">Pre-order now</a></span>
+                <span><a href="" class="ml-2 btn-secondary" id="reverse">watch the teaser</a></span>
             </div>
 
-            <div class="flex align-items-center mt-1 item-4">
+            <div class="flex align-items-center mt-2 item-4">
                 <img src="svg/ps.svg" class="w-auto" onload="SVGInject(this)">
                 <img src="svg/marvel.svg" class="ml-2 w-auto" onload="SVGInject(this)">
             </div>
         </div>
-        <div class="container-item-2 item-5">
-            <div class="js-tilt">
+        <div class="container-item-2 item-5" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+            <div class="js-tilt" style="will-change: transform; transform: perspective(2200px) rotateX(0deg) rotateY(0deg);">
                 <img src="img/spiderman-img.png" class="spiderman" onload="SVGInject(this)">
             </div>
         </div>
@@ -93,16 +99,13 @@
 
      <!--========== JS ==========-->
     <script src="js/app.js"></script>
-    <script src="js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
     <script>
         $('.js-tilt').tilt({
-            perspective: 2000,
-            scale: 1.05
+            perspective: 2000
         });
     </script>
 </body>
